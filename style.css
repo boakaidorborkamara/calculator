@@ -1,0 +1,108 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(31, 149, 245);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+}
+
+/* calculator frame sttyling starts */
+#container
+{
+    background-color: white;
+    width: 24vw;
+    height: 60vh;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(124, 120, 120);
+    /* padding: 5px; */
+}
+
+#control-bar
+{
+    background-color: rgb(233, 231, 231);
+    height: 10%;
+    border-bottom: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#control-bar div
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    height: 100%;
+}
+
+/* styling of screen starts */
+#screen
+{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    /* text-align: center; */
+    height: 10%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgb(37, 210, 233);
+    margin: 5px;
+}
+
+#screen p
+{
+ font-size: 1.7em;
+}
+
+#screen:hover
+{
+    cursor: text;
+}
+
+
+/* area containing all the btn styling starts */
+#btn-box
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    grid-gap: 5px;
+    
+}
+
+#btn-box div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.cancel-btn
+{
+    background-color: rgb(190, 30, 30);
+    color: white;
+}
+
+.equal-btn
+{
+    background-color: rgb(31, 149, 245);
+    color: white;
+}
+
+#btn-box div:hover
+{
+    cursor: pointer;
+}
