@@ -2,6 +2,7 @@
 {
     box-sizing: border-box;
 }
+
 body
 {
     background-color: rgb(31, 149, 245);
@@ -29,45 +30,26 @@ body
     background-color: rgb(233, 231, 231);
     height: 10%;
     border-bottom: 1px solid gray;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    /* justify-content: center;
-    align-items: center; */
-}
-
-#control-bar div
-{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* background-color: brown; */
-    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 
 /* styling of screen starts */
 #screen
 {
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    /* text-align: center; */
-    height: 10%;
+    font-size: 1.2em;
+    width: 97%;
     padding: 5px;
     background-color: white;
     border: 1px solid rgb(37, 210, 233);
     margin: 5px;
+    text-align: right;
 }
 
-#screen p
-{
- font-size: 1.7em;
-}
-
-#screen:hover
-{
-    cursor: text;
-}
 
 
 /* area containing all the btn styling starts */
@@ -105,4 +87,9 @@ body
 #btn-box div:hover
 {
     cursor: pointer;
+}
+
+#btn-box div:active
+{
+    background-color: gray;
 }
